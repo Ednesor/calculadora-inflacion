@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Calculadora de inflación en Argentina" />
+    <title>Calculadora de inflación - Argentina</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <section>
+      <h1>Calculadora de inflación - Argentina</h1>
+    </section>
+    <section class="calculadora">
+      <label>
+        Precio del producto
+        <input type="text" name="InputPrice" id="inputPrice" placeholder="Ingrese el precio" autocomplete="off">
+      </label>
+      <label>
+        Mes
+        <select name="month" id="month">
+          <option value="0">Seleccione una opcion</option>
+          <option value="1">Enero</option>
+          <option value="2">Febrero</option>
+          <option value="3">Marzo</option>
+          <option value="4">Abril</option>
+          <option value="5">Mayo</option>
+          <option value="6">Junio</option>
+          <option value="7">Julio</option>
+          <option value="8">Agosto</option>
+          <option value="9">Septiembre</option>
+          <option value="10">Octubre</option>
+          <option value="11">Noviembre</option>
+          <option value="12">Diciembre</option>
+        </select>
+      </label>
+      <label>
+        Año
+        <select name="year" id="year">
+          <option value="0">Seleccione un año</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+        </select>
+      </label>
+      <button id="inputButton">Calcular</button>
+      <div>
+        <p id="errores"></p>
+        <p id="finalPrice"></p>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>

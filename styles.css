@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+  display: flex;
+  flex-direction: column; /* Organiza en columna */
+  justify-content: center; /* Centra verticalmente el contenido */
+  align-items: center; /* Centra horizontalmente el contenido */
+  background-color: #ecfffb;
+  font-family: Arial, sans-serif;
+  gap: 50px;
+}
+section {
+  text-align: center; /* Alinea texto al centro dentro de cada sección */
+}
+
+.calculadora {
+  display: flex;
+  flex-direction: column; /* Organiza elementos en columna */
+  gap: 15px; /* Espacio entre los elementos */
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.363);
+  height: 400px;
+  width: 300px;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input,
+select {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input {
+  width: calc(100% - 25px);
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+p {
+  margin: 0;
+}
+
+#finalPrice,
+#errores {
+  font-weight: 500;
+  width: 80%;
+  margin: 10px auto 0px auto;
+}
+
+#errores {
+  width: 90%;
+  color: red;
+}
